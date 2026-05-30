@@ -315,7 +315,7 @@ Segue as imagens a serem utilizadas de avatar dos jogadores (não podendo utiliz
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/eb655a81-53c3-428c-9565-a14c82456752" />
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/e688e874-2d2a-42c3-8566-ffd141838fd4" />
 
-
+A paleta abaixo serve apenas como referência para elementos de destaque. A aplicação inteira deve permanecer em tema escuro.
 Cores sugeridas para o projeto:
 
 | Elemento         | Cor       |
