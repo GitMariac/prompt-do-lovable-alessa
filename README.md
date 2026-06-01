@@ -1078,6 +1078,8 @@ Se clicar em "Sim, sou eu", carrega o progresso existente.
 Se clicar em "Usar outro nome", volta para a tela de entrada.
 
 ---
+Aumentar fonte das letras no grid.
+
 Quero simplificar a geração das palavras no tabuleiro.
 
 **ALTERAÇÃO**
@@ -1103,6 +1105,7 @@ Facilitar a leitura das palavras e tornar o jogo mais acessível para estudantes
 4. Se não houver espaço disponível para posicionar uma palavra horizontalmente ou verticalmente, tentar outra posição válida.
 5. Preservar desempenho e funcionamento atual do tabuleiro.
 
+---
 
 
 
