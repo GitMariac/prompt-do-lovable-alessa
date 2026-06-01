@@ -1052,6 +1052,30 @@ https://docs.google.com/spreadsheets/d/1De46pnM_Ltycbe46esonztgI9cdX8H0SanrtR-rh
 
 A cada palavra selecionada pelo mouse haverá uma reação do avatar do jogo que ficará no canto inferior do grid pela animação que usar. Caso o jogador acerte, haverá confetes, emissão de som em festejo e o avatar ficará feliz. caso o jogador erre, leve avermelhar nas bordas da tela com emissão de som de buzina leve. No canto inferior da tela uma caixa de mensagem surge com a regra explicando a acentuação daquela palavra (haverá descrição mais adiante desta caixa).
 
+---
+## Edições do prompt: Fluxo de entrada
+
+Jogador digita: Maria
+
+O sistema verifica:
+
+Caso 1 - Nome não existe
+Bem-vinda, Maria!
+[Nova Jogadora]
+
+Cria o registro normalmente.
+
+Caso 2 - Nome já existe
+Já existe uma jogadora chamada Maria.
+
+Você é essa pessoa?
+
+[Sim, sou eu]
+[Usar outro nome]
+
+Se clicar em "Sim, sou eu", carrega o progresso existente.
+
+Se clicar em "Usar outro nome", volta para a tela de entrada.
 
 
 
