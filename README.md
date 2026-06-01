@@ -1077,6 +1077,31 @@ Se clicar em "Sim, sou eu", carrega o progresso existente.
 
 Se clicar em "Usar outro nome", volta para a tela de entrada.
 
+---
+Quero simplificar a geração das palavras no tabuleiro.
+
+**ALTERAÇÃO**
+
+As palavras devem ser posicionadas apenas:
+
+* Horizontal 
+* Vertical 
+
+Não permitir:
+
+* Diagonais
+
+**OBJETIVO**
+
+Facilitar a leitura das palavras e tornar o jogo mais acessível para estudantes do ensino fundamental.
+
+**REQUISITOS**
+
+1. Atualizar apenas o algoritmo de posicionamento das palavras.
+2. Manter o restante da lógica do jogo inalterada.
+3. Garantir que as palavras continuem sem sobreposição inválida.
+4. Se não houver espaço disponível para posicionar uma palavra horizontalmente ou verticalmente, tentar outra posição válida.
+5. Preservar desempenho e funcionamento atual do tabuleiro.
 
 
 
