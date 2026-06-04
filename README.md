@@ -1123,11 +1123,9 @@ Atualmente a rodada possui 8 palavras corretas e 8 incorretas.
 
 Altere para:
 
-10 palavras corretas
-
-10 palavras incorretas
-
-Totalizando 20 palavras por rodada.
+- 10 palavras corretas
+- 10 palavras incorretas
+- Totalizando 20 palavras por rodada.
 
 Verifique a função responsável pela seleção das palavras e ajuste a lógica para manter a proporção 10/10 em todas as rodadas.
 
@@ -1135,15 +1133,11 @@ Verifique a função responsável pela seleção das palavras e ajuste a lógica
 
 As palavras devem ser posicionadas apenas:
 
-Horizontal da esquerda para direita
-
-Horizontal da direita para esquerda
-
-Vertical de cima para baixo
-
-Vertical de baixo para cima
-
-Remova completamente qualquer posicionamento diagonal.
+- Horizontal da esquerda para direita
+- Horizontal da direita para esquerda
+- Vertical de cima para baixo
+- Vertical de baixo para cima
+- Remova completamente qualquer posicionamento diagonal.
 
 Revise a lógica de geração do tabuleiro para garantir que nenhuma palavra seja colocada em diagonais.
 
@@ -1167,49 +1161,36 @@ Isso deve funcionar tanto para palavras horizontais quanto verticais.
 
 Adicionar limite máximo de:
 
-30 tentativas por rodada
-
-Uma tentativa deve ser contabilizada sempre que o jogador concluir uma seleção válida no tabuleiro, independentemente de acertar ou errar.
-
-Exibir contador visível de tentativas:
-
-Tentativas: X / 30
+- 30 tentativas por rodada
+- Uma tentativa deve ser contabilizada sempre que o jogador concluir uma seleção válida no tabuleiro, independentemente de acertar ou errar.
+- Exibir contador visível de tentativas:
+- Tentativas: X / 30
 
 5. Encerramento da partida
 
-Atualmente o jogo nunca termina e permite seleções infinitas.
-
+Atualmente o jogo nunca termina e permite seleções infinitas. 
 Corrigir para que a rodada seja encerrada quando ocorrer qualquer uma das condições abaixo:
 
-O jogador encontrar todas as palavras corretas da rodada.
+- O jogador encontrar todas as palavras corretas da rodada.
 
 OU
 
-O jogador atingir 30 tentativas.
-
-Quando a rodada terminar:
-
-Bloquear novas seleções no tabuleiro.
-
-Impedir ganho ou perda de pontos.
-
-Impedir novas mensagens no chat.
+- O jogador atingir 30 tentativas.
+- Quando a rodada terminar:
+- Bloquear novas seleções no tabuleiro.
+- Impedir ganho ou perda de pontos.
+- Impedir novas mensagens no chat.
 
 6. Modal de fim de jogo
 
 Criar um modal centralizado exibido ao final da rodada contendo:
 
-Título: "Rodada Finalizada"
-
-Total de acertos
-
-Total de erros
-
-Total de tentativas
-
-Pontuação final
-
-Tempo total da partida
+- Título: "Rodada Finalizada"
+- Total de acertos
+- Total de erros
+- Total de tentativas
+- Pontuação final
+- Tempo total da partida
 
 Adicionar dois botões:
 
@@ -1233,13 +1214,10 @@ Não altere a estrutura de armazenamento neste momento, apenas garanta que a fun
 
 Após implementar as alterações:
 
-Verifique erros de TypeScript.
-
-Verifique erros de build.
-
-Verifique possíveis regressões.
-
-Confirme que o jogo continua funcionando em desktop e mobile.
+- Verifique erros de TypeScript.
+- Verifique erros de build.
+- Verifique possíveis regressões.
+- Confirme que o jogo continua funcionando em desktop e mobile.
 
 Explique quais arquivos foram modificados e quais mudanças foram realizadas em cada um deles.
 
@@ -1275,9 +1253,8 @@ Mensagem:
 
 Botões:
 
-Continuar jogando
-
-Sim, desistir
+- Continuar jogando
+- Sim, desistir
 
 Nenhuma ação deve ocorrer sem confirmação.
 
@@ -1285,17 +1262,14 @@ Nenhuma ação deve ocorrer sem confirmação.
 
 Quando o jogador confirmar:
 
-Bloquear imediatamente novas seleções no tabuleiro.
-
-Revelar visualmente todas as palavras corretas que ainda não foram encontradas.
-
-Destacar essas palavras utilizando uma aparência diferente das palavras encontradas normalmente.
+- Bloquear imediatamente novas seleções no tabuleiro.
+- Revelar visualmente todas as palavras corretas que ainda não foram encontradas.
+- Destacar essas palavras utilizando uma aparência diferente das palavras encontradas normalmente.
 
 Sugestão:
 
-palavras encontradas pelo jogador = destaque normal
-
-palavras reveladas pela desistência = destaque visual diferente (ex.: cor mais suave ou contorno especial)
+- palavras encontradas pelo jogador = destaque normal
+- palavras reveladas pela desistência = destaque visual diferente (ex.: cor mais suave ou contorno especial)
 
 **Salvamento da partida**
 
@@ -1303,17 +1277,12 @@ A desistência deve ser considerada uma forma válida de encerramento da rodada.
 
 O jogo deve:
 
-salvar a pontuação atual
-
-salvar os acertos atuais
-
-salvar os erros atuais
-
-salvar o tempo jogado
-
-Não zerar a pontuação.
-
-Não descartar o progresso realizado.
+- salvar a pontuação atual
+- salvar os acertos atuais
+- salvar os erros atuais
+- salvar o tempo jogado
+- Não zerar a pontuação.
+- Não descartar o progresso realizado.
 
 Se existir um campo de status da partida, registrar:
 
@@ -1325,21 +1294,20 @@ ou equivalente.
 
 Após revelar as palavras restantes:
 
-aguardar aproximadamente 2 segundos
-
-abrir automaticamente o mesmo modal de fim de jogo utilizado para vitória ou derrota
+- aguardar aproximadamente 2 segundos
+- abrir automaticamente o mesmo modal de fim de jogo utilizado para vitória ou derrota
 
 **Modal final**
 
 Exibir:
 
-Acertos
+- Acertos
 
-Erros
+- Erros
 
-Tentativas
+- Tentativas
 
-Tempo total
+- Tempo total
 
 **Pontuação final**
 
@@ -1349,9 +1317,8 @@ Adicionar uma linha informando:
 
 Botões:
 
-Jogar novamente
-
-Voltar ao início
+- Jogar novamente
+- Voltar ao início
 
 **Arquitetura**
 
@@ -1359,15 +1326,11 @@ Evitar criar uma lógica paralela apenas para desistência.
 
 Criar ou reutilizar uma função única de encerramento da partida para que:
 
-vitória
-
-limite de tentativas
-
-desistência
-
-utilizem o mesmo fluxo de finalização, salvamento e exibição do resultado.
-
-Realize uma melhoria na interface do jogo aproveitando o espaço vazio existente abaixo da área de chat da Alessa.
+- vitória
+- limite de tentativas
+- desistência
+- utilizem o mesmo fluxo de finalização, salvamento e exibição do resultado.
+- Realize uma melhoria na interface do jogo aproveitando o espaço vazio existente abaixo da área de chat da Alessa.
 
 **Objetivo**
 
@@ -1379,15 +1342,11 @@ Desejo transformar esse espaço em um painel de status da rodada, concentrando a
 
 Criar uma seção fixa abaixo do chat contendo:
 
-Pontuação atual
-
-Acertos
-
-Erros
-
-Tentativas
-
-Cronômetro da partida
+- Pontuação atual
+- Acertos
+- Erros
+- Tentativas
+- Cronômetro da partida
 
 _Exemplo:_
 
@@ -1407,17 +1366,12 @@ Adicionar um cronômetro em tempo real.
 
 **Requisitos:**
 
-Iniciar automaticamente ao começar a rodada.
-
-Atualizar durante a partida.
-
-Parar ao finalizar o jogo.
-
-Reiniciar ao iniciar uma nova rodada.
-
-Ser utilizado também na tela final de resultados.
-
-Formato: MM:SS
+- Iniciar automaticamente ao começar a rodada.
+- Atualizar durante a partida.
+- Parar ao finalizar o jogo.
+- Reiniciar ao iniciar uma nova rodada.
+- Ser utilizado também na tela final de resultados.
+- Formato: MM:SS
 
 Exemplos: 00:45/ 03:12/ 12:08
 
@@ -1425,14 +1379,13 @@ Exemplos: 00:45/ 03:12/ 12:08
 
 Exibir claramente:
 
-Tentativas: X / 30
+- Tentativas: X / 30
 
 Atualizar em tempo real.
 
 Quando o jogador estiver próximo do limite, destacar visualmente:
 
 - acima de 20 tentativas: aviso moderado
-
 - acima de 25 tentativas: aviso forte
 
 Sem exageros visuais, apenas para indicar que a rodada está próxima do fim.
@@ -1444,9 +1397,7 @@ Adicionar uma barra de progresso baseada nas palavras corretas encontradas.
 Exemplo:
 
 - 0/10 palavras → barra vazia
-
 - 5/10 palavras → 50%
-
 - 10/10 palavras → 100%
 
 A barra deve ficar logo acima das estatísticas.
@@ -1459,15 +1410,11 @@ Adicionar na parte inferior do painel um botão:
 
 Ao clicar:
 
-abrir confirmação
-
-revelar palavras restantes
-
-salvar pontuação atual
-
-aguardar aproximadamente 2 segundos
-
-abrir modal final
+- abrir confirmação
+- revelar palavras restantes
+- salvar pontuação atual
+- aguardar aproximadamente 2 segundos
+- abrir modal final
 
 Conforme a lógica já implementada para desistência.
 
@@ -1479,11 +1426,10 @@ O painel deve ter aparência compatível com o restante da interface da Alessa:
 - mesmas bordas arredondadas
 - mesma paleta de cores
 - responsivo para desktop e mobile
-- 
+  
 **Remoção de redundância**
 
 Caso as mesmas informações estejam sendo exibidas no topo do tabuleiro, reorganizar a interface para evitar duplicação desnecessária.
-
 O objetivo é que o painel lateral seja a principal área de acompanhamento da rodada.
 
 **Resultado esperado**
@@ -1491,32 +1437,21 @@ O objetivo é que o painel lateral seja a principal área de acompanhamento da r
 A lateral do jogo deverá ficar organizada da seguinte forma:
 
 - Cabeçalho da Alessa
-
 - Área de conversa
-
 - Barra de progresso
-
 - Estatísticas da rodada
-
 - Cronômetro
-
 - Botão de desistência
 
-A interface deve parecer um painel de acompanhamento da partida e aproveitar completamente o espaço atualmente vazio abaixo do chat.
-
+A interface deve parecer um painel de acompanhamento da partida e aproveitar completamente o espaço atualmente vazio abaixo do chat. 
 Ao final, informar quais arquivos foram alterados e quais mudanças foram realizadas em cada um deles.
 
 **Revisão final**
-
 Após implementar:
 
 - verificar erros de TypeScript
-
 - verificar erros de build
-
 - verificar regressões
-
 - confirmar que o botão funciona em desktop e mobile
-
 - informar quais arquivos foram modificados e quais alterações foram feitas em cada um deles
 
